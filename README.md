@@ -1,2 +1,2 @@
-# reddit-clone
-Reverse engineering the popular reddit app
+Reddit Clone,
+Reversed engineered by me
