@@ -1,11 +1,7 @@
-import style from "button.module.css";
+import style from "./button.module.css";
 
-interface Props {
-    children: React.ReactNode;
-}
-
-const Button: React.FunctionComponent<Props> = ({ children }) => {
-    return (<button className={style.customButton}>
+const Button: React.FunctionComponent<React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>> = ({ children, ...rest }) => {
+    return (<button {...rest} className={style.customButton}>
         {children}
     </button>)
 }

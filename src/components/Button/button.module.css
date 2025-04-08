@@ -1,5 +1,10 @@
 .customButton {
-  color: white;
 }
 .customButton:hover {
+}
+
+svg {
+  fill: var(--text);
+  width: 16px;
+  height: 16px;
 }
