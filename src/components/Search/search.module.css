@@ -1,0 +1,15 @@
+.search {
+  height: 100%;
+  padding: 12px;
+  padding-top: 16px;
+  margin: 0;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  background-color: var(--hover-color);
+}
+
+.search:focus {
+  outline-color: var(--outline-color);
+}

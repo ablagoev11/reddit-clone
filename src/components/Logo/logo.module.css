@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  fill: var(--logo-color);
+  width: 100px;
+}
+.icon {
+  width: 41px;
+  height: 41px;
+}
