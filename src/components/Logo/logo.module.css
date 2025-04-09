@@ -3,11 +3,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
 .logo {
   fill: var(--logo-color);
   width: 100px;
+  height: 52px;
 }
 .icon {
   width: 41px;
