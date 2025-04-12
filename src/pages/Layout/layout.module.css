@@ -1,0 +1,11 @@
+.container {
+  position: relative;
+}
+.profile {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: var(--text);
+  background-color: var(--third-color);
+  border-radius: 5px;
+}

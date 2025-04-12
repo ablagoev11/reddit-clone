@@ -5,17 +5,28 @@ const useHover = <T extends HTMLElement>(): [
 ] => {
   const ref = useRef<T | null>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const enter = () => setIsHovered(true);
-  const leave = () => setIsHovered(false);
+
   useEffect(() => {
-    const refCopy = ref;
-    refCopy.current?.addEventListener("mouseenter", enter);
-    refCopy.current?.addEventListener("mouseleave", leave);
-    return () => {
-      refCopy.current?.removeEventListener("mouseenter", enter);
-      refCopy.current?.removeEventListener("mouseleave", leave);
-    };
+    const interval = setInterval(() => {
+      const node = ref.current;
+      if (node) {
+        const enter = () => setIsHovered(true);
+        const leave = () => setIsHovered(false);
+
+        node.addEventListener("mouseenter", enter);
+        node.addEventListener("mouseleave", leave);
+
+        clearInterval(interval);
+        return () => {
+          node.removeEventListener("mouseenter", enter);
+          node.removeEventListener("mouseleave", leave);
+        };
+      }
+    }, 50);
+
+    return () => clearInterval(interval);
   }, []);
+
   return [ref, isHovered];
 };
 export default useHover;

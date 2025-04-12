@@ -8,10 +8,10 @@
 
 .logo {
   fill: var(--logo-color);
-  width: 100px;
+  width: 75px;
   height: 52px;
 }
 .icon {
-  width: 41px;
-  height: 41px;
+  width: 32px;
+  height: 32px;
 }

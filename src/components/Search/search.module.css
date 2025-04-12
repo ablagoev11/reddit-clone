@@ -2,24 +2,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 38%;
   background-color: var(--search-color);
   padding: 4px;
   border-radius: 50px;
   gap: 2px 0;
   border: 2px solid transparent;
+  height: 32px;
 }
 .search:hover {
   background-color: var(--hover-color);
 }
-
 input {
   background-color: transparent;
   width: 100%;
   border: none;
   outline: none;
   color: var(--text);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 
 .buttonMargin {
@@ -34,6 +33,7 @@ input {
 
 .search > svg {
   margin: 0 12px;
+  fill: var(--text);
 }
 .iconContainer {
   display: flex;
@@ -44,10 +44,40 @@ input {
   border: 2px solid var(--outline-color);
 }
 .hovered {
-  background-color: var(--secondary-color) !important;
+  background-color: var(--third-color) !important;
+}
+
+.container {
+  width: 28%;
+  position: relative;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  z-index: 100;
+}
+.containerOpened {
+  background-color: var(--third-color) !important;
+}
+.searchBox {
+  box-sizing: border-box;
+  position: absolute;
+  background-color: var(--third-color);
+  color: var(--text);
+  width: 100%;
+  padding: var(--padding-tops) 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+.searchBox .separator {
+  border-bottom: 1px solid var(--separetor-color);
+  height: 4px;
+}
+
+.svgSize {
+  width: 18px;
+  height: 18px;
 }
 @media (width < 1000px) {
-  .search {
+  .container {
     width: 80%;
   }
 }

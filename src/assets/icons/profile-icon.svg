@@ -1,0 +1,17 @@
+<svg viewBox="0 0 121 122" xmlns="http://www.w3.org/2000/svg" width="8rem" height="8rem">
+  <defs>
+    <clipPath id="mirrored-clip">
+      <path d="M0 0V79L28.1628 105.5C35.013 115.465 46.4934 122 59.5 122C72.5066 122 83.987 115.465 90.8372 105.5L120.5 79V0H0Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#mirrored-clip)">
+    <g transform="translate(121) scale(-1 1)">
+      <image 
+        href="https://styles.redditmedia.com/t5_kfa0i/styles/profileIcon_snoo7d9a22c6-22fa-437c-adf7-a7609a261238-headshot.png" 
+        width="121" 
+        height="122"
+        preserveAspectRatio="xMidYMid slice"
+      />
+    </g>
+  </g>
+</svg>
