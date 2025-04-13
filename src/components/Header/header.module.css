@@ -2,8 +2,8 @@
   background-color: var(--main-color);
   border-bottom: 1px var(--separetor-color) solid;
   padding: var(--padding-tops) var(--padding-sides);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  place-items: center;
 }

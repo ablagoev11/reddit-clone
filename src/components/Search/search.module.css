@@ -19,6 +19,7 @@ input {
   outline: none;
   color: var(--text);
   font-size: 0.9rem;
+  z-index: 51;
 }
 
 .buttonMargin {
@@ -48,12 +49,14 @@ input {
 }
 
 .container {
-  width: 38%;
+  width: 29%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  z-index: 50;
-  position: relative;
-  margin-left: 60px;
+  z-index: 40;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap; /* prevent it from wrapping */
 }
 .containerOpened {
   background-color: var(--third-color) !important;
@@ -81,5 +84,9 @@ input {
   .container {
     width: 100%;
     margin-left: 0;
+    position: relative;
+    left: 0;
+    transform: translateX(0);
+    white-space: nowrap; /* prevent it from wrapping */
   }
 }
