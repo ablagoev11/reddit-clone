@@ -1,9 +1,15 @@
+
+import RedditAuth from "../../auth/Authentication";
 import style from "./homepage.module.css"
 
 const Homepage: React.FunctionComponent = () => {
-    return <main className={style.homepage}>
-        hello
-    </main>
+
+
+    return (
+        <main>
+            <RedditAuth />
+        </main >
+    )
 }
 
 export default Homepage;
