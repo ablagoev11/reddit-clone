@@ -1,11 +1,11 @@
+import { useLocation } from "react-router-dom";
+
 const RedditAuth: React.FunctionComponent = () => {
-    function openLogin() {
+    const { pathname } = useLocation();
+    async function openLogin() {
+        document.cookie = "redirect_path=" + pathname;
         window.open(
-            `https://www.reddit.com/api/v1/authorize?
-							client_id=AhjZWMDdA6w8OqmbBs7Zsg&response_type=code
-							&state=random-string
-							&redirect_uri=http://localhost:5173/login/callback
-							&duration=permanent&scope=identity,submit,save`,
+            `http://localhost:3000/auth/reddit`,
             "_self"
         )
     }
